@@ -6,6 +6,8 @@ import banner1 from "../../../assets/img/banner/web-banner-1.png";
 import banner2 from "../../../assets/img/banner/web-banner-2.png";
 import banner3 from "../../../assets/img/banner/web-banner-3.png";
 
+import "animate.css"
+
 // Sample response data
 const response = {
   data: [
@@ -41,7 +43,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <section className="vs-hero-wrapper position-relative">
+    <section className="vs-hero-wrapper position-relative animate__animated animate__fadeInUp animate__slow">
       <div className="section-before">
         <img src={headerAfter} alt="shape" />
       </div>

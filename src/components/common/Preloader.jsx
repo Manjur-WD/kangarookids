@@ -8,7 +8,7 @@ const Preloader = () => {
   return (
     <>
       {/*========== Preloader =========*/}
-      <div className="preloader">
+      <div className="preloader overflow-hidden">
         <div className="preloader-content">
           <img src={unscreenGif} alt="" className="img1" />
           <img

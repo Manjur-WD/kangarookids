@@ -12,14 +12,14 @@ const Home = () => {
   return (
     <PageWithLoader>
       <>
-      <HeroSlider />
-      <ServiceSection />
-      <WelcomeToKKR />
-      <ClassSection />
-      <TeamSection />
-      <Appoinment />
-      <CalendarSection />
-    </>
+        <HeroSlider />
+        <ServiceSection />
+        <WelcomeToKKR />
+        <ClassSection />
+        <TeamSection />
+        <Appoinment />
+        <CalendarSection />
+      </>
     </PageWithLoader>
   );
 };

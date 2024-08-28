@@ -5,13 +5,23 @@ const Header = () => {
   const handleNavMenu = () => {
     setMobileNavMenu(true);
   };
-
   const closeMenu = () => {
     setMobileNavMenu(false);
   };
 
+  const handleSidebar =()=>{
+    setSideBarMenu(true);
+  }
+
+  const closeSideBar =()=>{
+    setSideBarMenu(false);
+  }
+
   const [mobileNavMenu, setMobileNavMenu] = useState(false);
+  const [sideBarMenu, setSideBarMenu] = useState(false);
   const [scrollValue, setScrollValue] = useState(0);
+
+
 
   useEffect(() => {
     window.onscroll = () => {
@@ -22,16 +32,16 @@ const Header = () => {
   return (
     <>
       {/* Side menu start */}
-      <div className="sidemenu-wrapper">
+      <div className={sideBarMenu ? "sidemenu-wrapper show" : "sidemenu-wrapper"}>
         <div className="sidemenu-content">
-          <button className="closeButton sideMenuCls">
+          <button className="closeButton sideMenuCls" onClick={closeSideBar}>
             <i className="far fa-times" />
           </button>
           <div className="widget footer-widget">
             <div className="vs-widget-about">
               <div className="about-logo">
                 <a href="index.html">
-                  <img src="assets/img/kkr/kkr-logo.png" alt="KKR" />
+                  <img src={logo} alt="KKR" />
                 </a>
               </div>
               <div className="multi-social">
@@ -79,7 +89,7 @@ const Header = () => {
               </p>
             </div>
           </div>
-          <div className="widget footer-widget">
+          {/* <div className="widget footer-widget">
             <h4 className="widget_title">News Feed</h4>
             <div className="recent-post-wrap">
               <div className="recent-post">
@@ -127,7 +137,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Side menu end */}
@@ -533,15 +543,11 @@ const Header = () => {
                       <a href="contact.html" className="vs-btn wave-btn">
                         Book a visit
                       </a>
-                      <button
-                        type="button"
-                        className="searchBoxToggler icon-btn"
-                      >
-                        <i className="far fa-search" />
-                      </button>
+                      
                       <button
                         type="button"
                         className="sideMenuToggler icon-btn"
+                        onClick={handleSidebar}
                       >
                         <i className="fal fa-bars" />
                       </button>

@@ -22,13 +22,30 @@ const ClassesSlider = () => {
     arrows: false, // Disable default arrows
     autoplay: true,
     autoplaySpeed: 3000,
-    pauseOnHover: false
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1200, // Screen width less than 1200px
+        settings: {
+          slidesToShow: 3, // Show 2 slides
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768, // Screen width less than 768px
+        settings: {
+          slidesToShow: 1, // Show 1 slide
+          slidesToScroll: 1,
+          dots: false // Disable dots on small screens if desired
+        }
+      }
+    ]
   };
 
   return (
     <div className="slider-container vs-carousel">
       {/* Custom navigation buttons */}
-      <button 
+      {/* <button 
         type="button" 
         className="slick-prev slick-arrow" 
         onClick={() => sliderRef.current.slickPrev()}
@@ -41,7 +58,7 @@ const ClassesSlider = () => {
         onClick={() => sliderRef.current.slickNext()}
       >
         <FaArrowRight />
-      </button>
+      </button> */}
       <Slider {...settings} ref={sliderRef} className="shape-slider vs-carousel">
         {/* Single Class */}
         <div className="px-2 wow fadeInUp h-100" data-wow-delay="0.1s">
