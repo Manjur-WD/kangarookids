@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/img/kkr/kkr-logo.png";
 
 const Header = () => {
@@ -11,7 +11,14 @@ const Header = () => {
   };
 
   const [mobileNavMenu, setMobileNavMenu] = useState(false);
+  const [scrollValue, setScrollValue] = useState(0);
 
+  useEffect(() => {
+    window.onscroll = () => {
+      setScrollValue(window.scrollY);
+    };
+  }, [scrollValue]);
+  
   return (
     <>
       {/* Side menu start */}
@@ -125,7 +132,11 @@ const Header = () => {
       </div>
       {/* Side menu end */}
       {/*vs-mobile-menu start*/}
-      <div className={mobileNavMenu ? "vs-menu-wrapper vs-body-visible" : "vs-menu-wrapper"}>
+      <div
+        className={
+          mobileNavMenu ? "vs-menu-wrapper vs-body-visible" : "vs-menu-wrapper"
+        }
+      >
         <div className="vs-menu-area">
           <button className="vs-menu-toggle" onClick={closeMenu}>
             <i className="fal fa-times" />
@@ -318,8 +329,8 @@ const Header = () => {
         </div>
         {/*header-top-wrapper end*/}
         {/*vs-main-menu-wrapper start*/}
-        <div className="sticky-wrapper">
-          <div className="sticky-active">
+        <div className={scrollValue > 200 ? "sticky-wrapper will-sticky" : "sticky-wrapper"}>
+          <div className={scrollValue > 200 ? "sticky-active active" : "sticky-active"}>
             <div className="header-menu-area">
               <div className="container-fluid w-75 position-relative">
                 <div className="row gx-20 align-items-center justify-content-between">

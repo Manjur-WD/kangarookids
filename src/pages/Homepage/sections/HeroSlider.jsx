@@ -45,7 +45,7 @@ const HeroSlider = () => {
       <div className="section-before">
         <img src={headerAfter} alt="shape" />
       </div>
-      <div class="section-after d-none d-md-block" >
+      <div className="section-after d-none d-md-block" >
         <img src={sliderAfter} alt="shape"/>
     </div>
       

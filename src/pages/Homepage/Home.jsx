@@ -6,10 +6,12 @@ import ClassSection from "./sections/ClassSection";
 import TeamSection from "./sections/TeamSection";
 import Appoinment from "./sections/Appoinment";
 import CalendarSection from "./sections/CalendarSection";
+import PageWithLoader from "../../components/common/PageWithLoader";
 
 const Home = () => {
   return (
-    <>
+    <PageWithLoader>
+      <>
       <HeroSlider />
       <ServiceSection />
       <WelcomeToKKR />
@@ -18,6 +20,7 @@ const Home = () => {
       <Appoinment />
       <CalendarSection />
     </>
+    </PageWithLoader>
   );
 };
 
