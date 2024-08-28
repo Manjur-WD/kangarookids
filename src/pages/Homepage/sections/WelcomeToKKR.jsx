@@ -42,83 +42,19 @@ const WelcomeToKKR = () => {
                 </ul>
                 <a href="about.html" className="vs-btn wave-btn style-1">
                   Learn More
+                  <span className="btn-hover">
+                    <span className="btn-hover-inner">
+                      <span className="part part-1"></span>
+                      <span className="part part-1"></span>
+                      <span className="part part-1"></span>
+                      <span className="part part-1"></span>
+                    </span>
+                  </span>
                 </a>
               </div>
             </div>
             <div className="col-lg-7">
                 <WelcomeKKRslider />
-              {/* <div className="shape-slider-area">
-                <button
-                  data-slick-prev="#sliderOne"
-                  className="simple-arrow arrow-left"
-                >
-                  <i className="far fa-chevron-left" />
-                </button>
-                <button
-                  data-slick-next="#sliderOne"
-                  className="simple-arrow arrow-right"
-                >
-                  <i className="far fa-chevron-right" />
-                </button>
-                <div
-                  className="shape-slider vs-carousel"
-                  id="sliderOne"
-                  data-slide-show={1}
-                  data-md-slide-show={1}
-                >
-                  <div className="slide-item">
-                    <img
-                      className="line-1"
-                      data-ani="slideinup"
-                      data-ani-delay=".2s"
-                      src="assets/img/shape/line-1.png"
-                      alt="shape"
-                    />
-                    <img
-                      className="line-2"
-                      data-ani="slideinup"
-                      data-ani-delay=".5s"
-                      src="assets/img/shape/line-2.png"
-                      alt="shape"
-                    />
-                    <img src="assets/img/shape/shape-slide-1.png" alt="shape" />
-                  </div>
-                  <div className="slide-item">
-                    <img
-                      className="line-1"
-                      data-ani="slideinup"
-                      data-ani-delay=".2s"
-                      src="assets/img/shape/line-1.png"
-                      alt="shape"
-                    />
-                    <img
-                      className="line-2"
-                      data-ani="slideinup"
-                      data-ani-delay=".5s"
-                      src="assets/img/shape/line-2.png"
-                      alt="shape"
-                    />
-                    <img src="assets/img/shape/shape-slide-2.png" alt="shape" />
-                  </div>
-                  <div className="slide-item">
-                    <img
-                      className="line-1"
-                      data-ani="slideinup"
-                      data-ani-delay=".2s"
-                      src="assets/img/shape/line-1.png"
-                      alt="shape"
-                    />
-                    <img
-                      className="line-2"
-                      data-ani="slideinup"
-                      data-ani-delay=".5s"
-                      src="assets/img/shape/line-2.png"
-                      alt="shape"
-                    />
-                    <img src="assets/img/shape/shape-slide-3.png" alt="shape" />
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

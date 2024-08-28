@@ -1,12 +1,17 @@
 import React from "react";
 import logo from "../../assets/img/kkr/kkr-logo.png"
+import sun3 from "../../assets/img/icon/sun-3.png"
+import butterfly from "../../assets/img/icon/butterfly.png"
+import butterflySM from "../../assets/img/icon/butterfly-sm.png"
+import footer3 from "../../assets/img/bg/footer-3.png"
+import "../../assets/css/style.css"
 
 const Footer = () => {
   return (
     <>
       <footer
-        className="footer-wrapper footer-layout1"
-        data-bg-src="assets/img/bg/footer-3.png"
+        className="footer-wrapper footer-layout1 background-image shape-mockup-wrap"
+        style={{background:`url(${footer3}) no-repeat bottom/contain`, backgroundColor: "#dbeaf7"}}
       >
         <div className="widget-area">
           <div className="container">
@@ -147,24 +152,22 @@ const Footer = () => {
         </div>
         <div
           className="shape-mockup movingX d-none d-hd-block"
-          data-top="7%"
-          data-left="5%"
+          style={{top: "7%",left: "5%"}}
         >
-          <img src="assets/img/icon/sun-3.png" alt="shapes" />
+          <img src={sun3} alt="shapes" />
         </div>
         <div
           className="shape-mockup movingX d-none d-hd-block"
-          data-bottom="56%"
-          data-left="33%"
+          style={{bottom: "56%",left: "33%"}}
         >
-          <img src="assets/img/icon/butterfly.png" alt="shapes" />
+          <img src={butterfly} alt="shapes" />
         </div>
         <div
           className="shape-mockup moving d-none d-hd-block"
-          data-top="49%"
-          data-right="30%"
+
+          style={{top: "49%",right: "36%"}}
         >
-          <img src="assets/img/icon/butterfly-sm.png" alt="shapes" />
+          <img src={butterflySM} alt="shapes" />
         </div>
         <div className="footer-copyright">
           <div className="container">

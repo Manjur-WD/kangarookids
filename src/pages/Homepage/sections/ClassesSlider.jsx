@@ -20,6 +20,9 @@ const ClassesSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false, // Disable default arrows
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false
   };
 
   return (

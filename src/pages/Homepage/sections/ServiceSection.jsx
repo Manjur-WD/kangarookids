@@ -5,11 +5,10 @@ import lolypop from "../../../assets/img/icon/lolypop.png"
 import starSm from "../../../assets/img/icon/star-sm.png"
 import star from "../../../assets/img/icon/star.png"
 
-
 const ServiceSection = () => {
   return (
     <>
-      <section className="service-section py-md-5 py-0 shape-mockup-wrap">
+      <section className="service-section py-md-5 py-0 mt-5 shape-mockup-wrap">
         <div className="container">
           <div
             className="row text-center justify-content-center wow fadeInUp"
@@ -143,7 +142,7 @@ const ServiceSection = () => {
         </div>
         <div
           className="shape-mockup z-index-3 d-none d-xl-block"
-          style={{top: "-4%",left: "-4%"}}
+          style={{top: "-7%",left: "2%"}}
         >
           <img src={serviceLine} alt="shapes" />
         </div>
