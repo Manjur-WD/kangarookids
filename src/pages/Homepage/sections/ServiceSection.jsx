@@ -1,4 +1,5 @@
 import React from "react";
+import { useGSAP } from "@gsap/react";
 
 import serviceLine from "../../../assets/img/shape/service-line.png"
 import lolypop from "../../../assets/img/icon/lolypop.png"

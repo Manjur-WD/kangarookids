@@ -11,7 +11,7 @@ const TeamSection = () => {
       {/*======== Teacher Group Section Section ========*/}
       <section className="appointment-section shape-mockup-wrap">
         <div className="container">
-          <div className="row gx-60 gy-30 flex-column-reverse flex-lg-row align-items-center">
+          <div className="row gx-60 gy-30 flex-column flex-lg-row align-items-center">
             <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
               <div className="text-center text-lg-start">
                 <h2
