@@ -45,7 +45,7 @@ const Header = () => {
           <div className="widget footer-widget">
             <div className="vs-widget-about">
               <div className="about-logo">
-                <Link to="/kangarookids">
+                <Link to="/">
                   <img src={logo} alt="KKR" />
                 </Link>
               </div>
@@ -157,14 +157,14 @@ const Header = () => {
             <i className="fal fa-times" />
           </button>
           <div className="mobile-logo">
-            <Link to="/kangarookids">
+            <Link to="/">
               <img src={logo} alt="KKR" />
             </Link>
           </div>
           <div className="vs-mobile-menu">
             <ul>
               <li className="menu-item-has-children">
-                <NavLink to="/kangarookids" onClick={closeMenu}>
+                <NavLink to="/" onClick={closeMenu}>
                   Home
                 </NavLink>
               </li>
@@ -373,7 +373,7 @@ const Header = () => {
                 <div className="row gx-20 align-items-center justify-content-between">
                   <div className="col-auto">
                     <div className="header-logo">
-                      <Link to="/kangarookids">
+                      <Link to="/">
                         <img
                           src={logo}
                           alt="logo"
@@ -386,7 +386,7 @@ const Header = () => {
                     <nav className="main-menu menu-style1 d-none d-lg-inline-block">
                       <ul>
                         <li className="menu-item-has-children">
-                          <NavLink to="/kangarookids" className="menu-link">
+                          <NavLink to="/" className="menu-link">
                             Home
                           </NavLink>
                         </li>

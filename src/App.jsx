@@ -16,11 +16,11 @@ const Events = lazy(() => import("./pages/EventsPage/Events"));
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Header />
       <Suspense fallback={<Preloader />}>
         <Routes>
-          <Route path="/kangarookids" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/academics" element={<Academics />} />
           <Route path="/curriculum" element={<Curriculum />} />
