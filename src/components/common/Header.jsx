@@ -369,7 +369,7 @@ const Header = () => {
             }
           >
             <div className="header-menu-area">
-              <div className="container-fluid w-75 position-relative">
+              <div className="container position-relative">
                 <div className="row gx-20 align-items-center justify-content-between">
                   <div className="col-auto">
                     <div className="header-logo">
