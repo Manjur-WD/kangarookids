@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/img/kkr/kkr-logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const handleNavMenu = () => {
@@ -9,30 +10,34 @@ const Header = () => {
     setMobileNavMenu(false);
   };
 
-  const handleSidebar =()=>{
+  const handleSidebar = () => {
     setSideBarMenu(true);
-  }
+  };
 
-  const closeSideBar =()=>{
+  const closeSideBar = () => {
     setSideBarMenu(false);
-  }
+  };
+
+  const scrolltoTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const [mobileNavMenu, setMobileNavMenu] = useState(false);
   const [sideBarMenu, setSideBarMenu] = useState(false);
   const [scrollValue, setScrollValue] = useState(0);
-
-
 
   useEffect(() => {
     window.onscroll = () => {
       setScrollValue(window.scrollY);
     };
   }, [scrollValue]);
-  
+
   return (
     <>
       {/* Side menu start */}
-      <div className={sideBarMenu ? "sidemenu-wrapper show" : "sidemenu-wrapper"}>
+      <div
+        className={sideBarMenu ? "sidemenu-wrapper show" : "sidemenu-wrapper"}
+      >
         <div className="sidemenu-content">
           <button className="closeButton sideMenuCls" onClick={closeSideBar}>
             <i className="far fa-times" />
@@ -159,10 +164,10 @@ const Header = () => {
           <div className="vs-mobile-menu">
             <ul>
               <li className="menu-item-has-children">
-                <a href="index.html">Home</a>
+              <NavLink to="/kangarookids" >Home</NavLink>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li className="menu-item-has-children">
                 <a href="class-details1.html">Academics</a>
@@ -339,8 +344,16 @@ const Header = () => {
         </div>
         {/*header-top-wrapper end*/}
         {/*vs-main-menu-wrapper start*/}
-        <div className={scrollValue > 200 ? "sticky-wrapper will-sticky" : "sticky-wrapper"}>
-          <div className={scrollValue > 200 ? "sticky-active active" : "sticky-active"}>
+        <div
+          className={
+            scrollValue > 200 ? "sticky-wrapper will-sticky" : "sticky-wrapper"
+          }
+        >
+          <div
+            className={
+              scrollValue > 200 ? "sticky-active active" : "sticky-active"
+            }
+          >
             <div className="header-menu-area">
               <div className="container-fluid w-75 position-relative">
                 <div className="row gx-20 align-items-center justify-content-between">
@@ -359,10 +372,10 @@ const Header = () => {
                     <nav className="main-menu menu-style1 d-none d-lg-inline-block">
                       <ul>
                         <li className="menu-item-has-children">
-                          <a href="index.html">Home</a>
+                          <NavLink to="/kangarookids" className="menu-link" >Home</NavLink>
                         </li>
-                        <li>
-                          <a href="about.html">About</a>
+                        <li className="menu-item-has-children">
+                          <NavLink to="/about" className="menu-link">About</NavLink>
                         </li>
                         <li className="menu-item-has-children">
                           <a href="class-details1.html">Academics</a>
@@ -370,7 +383,7 @@ const Header = () => {
                         <li className="menu-item-has-children">
                           <a href="service-details.html">Curriculum</a>
                         </li>
-                        <li>
+                        <li className="menu-item-has-children">
                           <a href="gallery.html">Gallery</a>
                         </li>
                         <li className="menu-item-has-children">
@@ -543,7 +556,7 @@ const Header = () => {
                       <a href="contact.html" className="vs-btn wave-btn">
                         Book a visit
                       </a>
-                      
+
                       <button
                         type="button"
                         className="sideMenuToggler icon-btn"
@@ -561,6 +574,18 @@ const Header = () => {
         {/*vs-main-menu-wrapper end*/}
       </header>
       {/*======== / Header ========*/}
+      {/* <!-- Scroll To Top --> */}
+      <button
+        type="button"
+        onClick={scrolltoTop}
+        className={
+          scrollValue > 400
+            ? "border-0 bg-transparent scrollToTop scroll-btn show"
+            : "border-0 bg-transparent scrollToTop scroll-btn"
+        }
+      >
+        <i class="far fa-arrow-up"></i>
+      </button>
     </>
   );
 };

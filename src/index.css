@@ -4524,6 +4524,11 @@ ul.popular-service-wrap li:hover {
     color: var(--white-color);
 }
 
+.menu-link.active {
+    background-color: var(--theme-color);
+    color: var(--white-color);
+}
+
 .main-menu ul {
     margin: 0;
     padding: 0;
@@ -4598,6 +4603,10 @@ ul.popular-service-wrap li:hover {
     content: "\f105";
     float: right;
     top: 0;
+}
+
+.menu-item-has-children a.active{
+
 }
 
 .main-menu ul.sub-menu li a {
@@ -11234,7 +11243,7 @@ span.select2-selection.select2-selection--single:focus {
 
 /*------------------- 4.27. Testimonial  -------------------*/
 .testi-box {
-    height: 530px !important;
+    min-height: 530px !important;
     border-radius: 30px;
     background-color: var(--white-color);
     box-shadow: 0px 7px 12px 4px rgba(75, 83, 100, 0.06);
