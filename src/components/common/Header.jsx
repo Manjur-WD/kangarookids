@@ -45,9 +45,9 @@ const Header = () => {
           <div className="widget footer-widget">
             <div className="vs-widget-about">
               <div className="about-logo">
-                <a href="index.html">
+                <Link to="/kangarookids">
                   <img src={logo} alt="KKR" />
-                </a>
+                </Link>
               </div>
               <div className="multi-social">
                 <a
@@ -157,29 +157,41 @@ const Header = () => {
             <i className="fal fa-times" />
           </button>
           <div className="mobile-logo">
-            <a href="index.html">
-              <img src={logo} alt="logo" />
-            </a>
+            <Link to="/kangarookids">
+              <img src={logo} alt="KKR" />
+            </Link>
           </div>
           <div className="vs-mobile-menu">
             <ul>
               <li className="menu-item-has-children">
-                <NavLink to="/kangarookids">Home</NavLink>
+                <NavLink to="/kangarookids" onClick={closeMenu}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about" onClick={closeMenu}>
+                  About
+                </NavLink>
               </li>
               <li className="menu-item-has-children">
-                <NavLink to="/academics">Academics</NavLink>
+                <NavLink to="/academics" onClick={closeMenu}>
+                  Academics
+                </NavLink>
               </li>
               <li className="menu-item-has-children">
-                <NavLink to="/curriculum">Curriculum</NavLink>
+                <NavLink to="/curriculum" onClick={closeMenu}>
+                  Curriculum
+                </NavLink>
               </li>
               <li className="menu-item-has-children">
-                <a href="gallery.html">Gallery</a>
+                <NavLink to="/gallery" onClick={closeMenu}>
+                  Gallery
+                </NavLink>
               </li>
               <li className="menu-item-has-children">
-                <a href="#">Events</a>
+                <NavLink to="/events" onClick={closeMenu}>
+                  Events
+                </NavLink>
                 <ul className="sub-menu">
                   <li className="text-warning d-block fs-5 border-warning p-2 border-bottom text-center">
                     Sports Day
@@ -275,10 +287,12 @@ const Header = () => {
                 </ul>
               </li>
               <li className="menu-item-has-children">
-                <a href="principle-speak.html">Principal's Speak</a>
+                <NavLink to="/principals-speak" onClick={closeMenu}>
+                  Principal's Speak
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/contact">
+                <NavLink to="/contact" onClick={closeMenu}>
                   Contact
                 </NavLink>
               </li>
@@ -359,13 +373,13 @@ const Header = () => {
                 <div className="row gx-20 align-items-center justify-content-between">
                   <div className="col-auto">
                     <div className="header-logo">
-                      <a href="index.html">
+                      <Link to="/kangarookids">
                         <img
                           src={logo}
                           alt="logo"
                           style={{ paddingBottom: 10 }}
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-auto">
@@ -392,10 +406,14 @@ const Header = () => {
                           </NavLink>
                         </li>
                         <li className="menu-item-has-children">
-                          <a href="gallery.html">Gallery</a>
+                          <NavLink to="/gallery" className="menu-link">
+                            Gallery
+                          </NavLink>
                         </li>
                         <li className="menu-item-has-children">
-                          <a href="#">Events</a>
+                          <NavLink to="/events" className="menu-link">
+                            Events
+                          </NavLink>
                           <ul className="sub-menu d-flex gap-4">
                             <ul>
                               <li className="text-warning d-block fs-5 border-warning p-2 border-bottom text-center">
@@ -549,7 +567,7 @@ const Header = () => {
                           </NavLink>
                         </li>
                         <li>
-                        <NavLink to="/contact" className="menu-link">
+                          <NavLink to="/contact" className="menu-link">
                             Contact
                           </NavLink>
                         </li>
@@ -565,9 +583,9 @@ const Header = () => {
                   </div>
                   <div className="col-auto d-none d-xl-block">
                     <div className="header-button">
-                      <a href="contact.html" className="vs-btn wave-btn">
+                      <Link to="/contact" className="vs-btn wave-btn">
                         Book a visit
-                      </a>
+                      </Link>
 
                       <button
                         type="button"

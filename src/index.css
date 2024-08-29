@@ -4605,9 +4605,7 @@ ul.popular-service-wrap li:hover {
     top: 0;
 }
 
-.menu-item-has-children a.active{
-
-}
+.menu-item-has-children a.active {}
 
 .main-menu ul.sub-menu li a {
     position: relative;
@@ -6183,7 +6181,7 @@ ul.comment-list .vs-comment:last-child:not(.children .vs-comment)>.vs-post-comme
 
 /* Extra small devices */
 @media (max-width: 575px) {
-    
+
     .vs-post-comment {
         flex-direction: column;
     }
@@ -6516,10 +6514,10 @@ ul.comment-list .vs-comment:last-child:not(.children .vs-comment)>.vs-post-comme
 
 /* Medium devices */
 @media (max-width: 991px) {
-    .vs-hero-wrapper{
+    .vs-hero-wrapper {
         min-height: auto;
     }
-    
+
 
     .vs-hero-wrapper .shape-before img,
     .vs-hero-wrapper .section-before img {
@@ -13106,3 +13104,43 @@ ul.pagination {
     border-color: #66267b;
     padding: 5px 15px;
 }
+
+.gallery-sidebar {
+    border-right: 2px solid #66267b;
+}
+
+.gallery-sidebar ul li {
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px dashed #66267b;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-sidebar ul li:hover,.gallery-sidebar ul li.active{
+    background-color: #66267b;
+    border-color: #FEC20B;
+    color: white;
+}
+
+.events-filter-section{
+    background-color: whitesmoke;
+    border-radius: 50px;
+    border: 2px dashed #FEC20B;
+    padding: 3px;
+}
+
+.filter-category{
+    background-color: #66267b;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.filter-category select{
+    border-radius: 30px;
+}
+

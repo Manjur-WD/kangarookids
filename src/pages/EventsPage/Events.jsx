@@ -1,22 +1,22 @@
 import React from "react";
 import Breadcrumb from "../../components/common/Breadcrumb";
-import CurriculumVideos from "./sections/CurriculumVideos";
+import EventsWrap from "./sections/EventsWrap";
 import AnimatePage from "../../components/common/AnimatePage";
 
-const Curriculum = () => {
+const Events = () => {
   return (
     <AnimatePage>
       <>
         <Breadcrumb
-          pageTitle="Curriculum"
+          pageTitle="Events"
           navLinkPrevName="Home"
           navLinkPrev="/kangarookids"
-          navLinkCurrent="Curriculum"
+          navLinkCurrent="Events"
         />
-        <CurriculumVideos />
+        <EventsWrap />
       </>
     </AnimatePage>
   );
 };
 
-export default Curriculum;
+export default Events;
