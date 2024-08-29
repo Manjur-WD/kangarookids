@@ -2,7 +2,12 @@ import React from "react";
 import breadcrumbBG from "../../assets/img/bg/about_us_banner.png";
 import { Link } from "react-router-dom";
 
-const Breadcrumb = ({ pageTitle, navLinkPrev, navLinkCurrent }) => {
+const Breadcrumb = ({
+  pageTitle,
+  navLinkPrev,
+  navLinkCurrent,
+  navLinkPrevName,
+}) => {
   return (
     <>
       <>
@@ -16,7 +21,7 @@ const Breadcrumb = ({ pageTitle, navLinkPrev, navLinkCurrent }) => {
               <h1 className="breadcumb-title">{pageTitle}</h1>
               <ul className="breadcumb-menu">
                 <li>
-                  <Link to={navLinkPrev}>Home</Link>
+                  <Link to={navLinkPrev}>{navLinkPrevName}</Link>
                 </li>
                 <li className="active">{navLinkCurrent}</li>
               </ul>

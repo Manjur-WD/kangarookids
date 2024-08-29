@@ -10,6 +10,7 @@ const About = () => {
     <>
       <Breadcrumb
         pageTitle="About Us"
+        navLinkPrevName="Home"
         navLinkPrev="/kangarookids"
         navLinkCurrent="About Us"
       />

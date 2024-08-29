@@ -164,16 +164,16 @@ const Header = () => {
           <div className="vs-mobile-menu">
             <ul>
               <li className="menu-item-has-children">
-              <NavLink to="/kangarookids" >Home</NavLink>
+                <NavLink to="/kangarookids">Home</NavLink>
               </li>
               <li>
                 <NavLink to="/about">About</NavLink>
               </li>
               <li className="menu-item-has-children">
-                <a href="class-details1.html">Academics</a>
+                <NavLink to="/academics">Academics</NavLink>
               </li>
               <li className="menu-item-has-children">
-                <a href="service-details.html">Curriculum</a>
+                <NavLink to="/curriculum">Curriculum</NavLink>
               </li>
               <li className="menu-item-has-children">
                 <a href="gallery.html">Gallery</a>
@@ -225,9 +225,7 @@ const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="prenurse.html">
-                      Pre Nursery
-                    </a>
+                    <NavLink to="/principals-speak">Principal's Speak</NavLink>
                   </li>
                   <li>
                     <a className="dropdown-item" href="ttp.html">
@@ -280,7 +278,9 @@ const Header = () => {
                 <a href="principle-speak.html">Principal's Speak</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <NavLink to="/contact">
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -372,16 +372,24 @@ const Header = () => {
                     <nav className="main-menu menu-style1 d-none d-lg-inline-block">
                       <ul>
                         <li className="menu-item-has-children">
-                          <NavLink to="/kangarookids" className="menu-link" >Home</NavLink>
+                          <NavLink to="/kangarookids" className="menu-link">
+                            Home
+                          </NavLink>
                         </li>
                         <li className="menu-item-has-children">
-                          <NavLink to="/about" className="menu-link">About</NavLink>
+                          <NavLink to="/about" className="menu-link">
+                            About
+                          </NavLink>
                         </li>
                         <li className="menu-item-has-children">
-                          <a href="class-details1.html">Academics</a>
+                          <NavLink to="/academics" className="menu-link">
+                            Academics
+                          </NavLink>
                         </li>
                         <li className="menu-item-has-children">
-                          <a href="service-details.html">Curriculum</a>
+                          <NavLink to="/curriculum" className="menu-link">
+                            Curriculum
+                          </NavLink>
                         </li>
                         <li className="menu-item-has-children">
                           <a href="gallery.html">Gallery</a>
@@ -536,10 +544,14 @@ const Header = () => {
                           </ul>
                         </li>
                         <li className="menu-item-has-children">
-                          <a href="principle-speak.html">Principal's Speak</a>
+                          <NavLink to="/principals-speak" className="menu-link">
+                            Principal's Speak
+                          </NavLink>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                        <NavLink to="/contact" className="menu-link">
+                            Contact
+                          </NavLink>
                         </li>
                       </ul>
                     </nav>
@@ -584,7 +596,7 @@ const Header = () => {
             : "border-0 bg-transparent scrollToTop scroll-btn"
         }
       >
-        <i class="far fa-arrow-up"></i>
+        <i className="far fa-arrow-up"></i>
       </button>
     </>
   );
