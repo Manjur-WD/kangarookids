@@ -16,7 +16,7 @@ const Events = lazy(() => import("./pages/EventsPage/Events"));
 
 const App = () => {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/kangarookids">
       <Header />
       <Suspense fallback={<Preloader />}>
         <Routes>
