@@ -1,1 +1,0 @@
-const s="/kangarookids/assets/class-1-CMJpTBCx.jpg",a="/kangarookids/assets/class-2-BKWrZGuP.jpg",c="/kangarookids/assets/class-3-CNXmpTnH.jpg",o="/kangarookids/assets/class-4-CyelV7QK.jpg",l="/kangarookids/assets/class-5-DrOco_Fh.jpg",n="/kangarookids/assets/class-6-DLhc0xrs.jpg";export{a,c as b,s as c,o as d,l as e,n as f};
