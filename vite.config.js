@@ -21,5 +21,6 @@ export default defineConfig({
       ext: '.gz', // Extension for Gzip files
     }),
   ],
+  base: "/kangarookids",
 });
 
