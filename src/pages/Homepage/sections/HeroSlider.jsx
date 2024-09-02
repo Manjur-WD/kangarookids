@@ -55,7 +55,7 @@ const HeroSlider = () => {
         <Slider {...settings}>
           {banners.map((banner, index) => (
             <div className="hero-slide" key={index}>
-              <img src={banner} alt={`Banner ${index}`} />
+              <img src={banner} alt={`Banner ${index}`} loading="lazy" />
             </div>
           ))}
         </Slider>
