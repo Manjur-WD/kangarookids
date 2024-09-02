@@ -3,6 +3,7 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Preloader from "./components/common/Preloader";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 // Lazy load components
 const Home = lazy(() => import("./pages/Homepage/Home"));
@@ -17,6 +18,7 @@ const Events = lazy(() => import("./pages/EventsPage/Events"));
 const App = () => {
   return (
     <BrowserRouter basename="/kangarookids">
+      <ScrollToTop />
       <Header />
       <Suspense fallback={<Preloader />}>
         <Routes>
